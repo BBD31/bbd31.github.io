@@ -4,7 +4,7 @@ function createBox() {
   const box = document.createElement('div');
   box.classList.add('box');
 
-  const size = Math.random() * 60 + 20; // 20 to 80px
+  const size = Math.random() * 60 + 20;
   box.style.width = `${size}px`;
   box.style.height = `${size}px`;
 
