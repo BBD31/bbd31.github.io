@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  background: #0b0f2b;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  color: #b6c8ff;
+  position: relative;
+  z-index: 2;
+}
+
+header > div {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+nav div {
+  color: #8297ff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+nav div:hover {
+  color: #aabaff;
+}
+
+/* BUTTON STYLES */
+.btn {
+  padding: 12px 28px;
+  border-radius: 10px;
+  background: #5666ff;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #3f4dd1;
+}
+
+.btn.small {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+}
+
+/* CONTENT */
+.content {
+  text-align: center;
+  margin-top: 15vh;
+  z-index: 2;
+  position: relative;
+}
+
+.title-top {
+  color: #7985ff;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #c6d6ff;
+}
+
+.subtitle {
+  color: #a0b3ff;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* FAQ SECTION */
+.faq-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 100px 60px;
+  z-index: 2;
+  position: relative;
+}
+
+.faq-left {
+  flex: 1;
+}
+
+.faq-left h4 {
+  color: #7b85ff;
+  font-size: 0.9rem;
+}
+
+.faq-left h2 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  color: #cbd6ff;
+}
+
+.faq-left p {
+  color: #95a8ff;
+  font-size: 1rem;
+}
+
+.faq-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+details {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  color: #e0e8ff;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+details:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+summary {
+  list-style: none;
+  font-weight: 500;
+}
+
+/* FLOATING BOXES */
+.box-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.box {
+  position: absolute;
+  background: rgba(128, 140, 255, 0.15);
+  border-radius: 5px;
+  animation: floatBox 6s infinite ease-in-out alternate;
+  opacity: 0.5;
+}
+
+@keyframes floatBox {
+  0% { transform: translateY(0) translateX(0); }
+  100% { transform: translateY(-30px) translateX(30px); }
+}
