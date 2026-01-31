@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lua(u)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .Header {
+            background-color: #f9ffa9;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .Header img {
+            vertical-align: middle;
+        }
+        .Header h1 {
+            display: inline;
+            margin-left: 10px;
+            font-size: 2em;
+        }
+        .Main {
+            padding: 20px;
+        }
+        .Main h1 {
+            color: #333;
+        }
+        .Main h2 {
+            color: #666;
+        }      
+
+        .Header button {
+            background-color: #636363;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 12px;
+            margin-right: 20px;
+        }
+
+        .Header {
+            display: flex;
+            align-items: center;
+            position: relative;
+            height: 80px;       
+            padding: 0 20px;     
+        }
+
+
+        .Header img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .Header button {
+            margin-left: auto;
+            margin-right: 20px;
+        }
+
+        .Main img {
+            border-radius: 20px;
+        }   
+    </style> 
+
+</head>
+<body>
+    <div class="Header">
+        <img src="Logo.png" alt="Lua Logo" width="75">
+        <button id="Redict1">Tutorials</button>
+    </div>
+    <div class="Main">
+        <h1>What is Lua(u)?</h1>
+        <h2>Luau is a fast, safe, and specialized scripting language derived from Lua 5.1, designed specifically by Roblox for creating experiences within Roblox Studio. It features gradual typing, enhanced performance, and backward compatibility with Lua, making it the standard for writing game logic, plugins, and user-facing application code.</h2>
+        <img src="Example.jpg" alt="Luau Logo" width="500">
+        <h1>Can lua(u) run in lua decompiler?</h1>
+        <h2>No — Luau is a modified Lua 5.1 with its own bytecode, opcodes, and VM, so standard Lua decompilers can’t read it; only Luau-aware Roblox tools can decompile it, and only imperfectly.</h2>
+        <h1>Can I obfuscate Luau code? What will happen?</h1>
+        <h2>Yes, you can obfuscate Luau in Roblox, but you can get banned if it’s used to hide malicious behavior or bypass Roblox moderation, because it violates Roblox ToS.</h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

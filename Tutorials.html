@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lua(u)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .Header {
+            background-color: #f9ffa9;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .Header img {
+            vertical-align: middle;
+        }
+        .Header h1 {
+            display: inline;
+            margin-left: 10px;
+            font-size: 2em;
+        }
+        .Main {
+            padding: 20px;
+        }
+        .Main h1, h3 {
+            color: #333;
+        }
+        .Main h2 {
+            color: #666;
+        }      
+
+        .Header button {
+            background-color: #636363;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 12px;
+            margin-right: 20px;
+        }
+
+        .Header {
+            display: flex;
+            align-items: center;
+            position: relative;
+            height: 80px;       
+            padding: 0 20px;     
+        }
+
+
+        .Header img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .Header button {
+            margin-left: auto;
+            margin-right: 20px;
+        }
+
+        .Main img {
+            border-radius: 10px;
+        }   
+    </style> 
+
+</head>
+<body>
+    <div class="Header">
+        <img src="Logo.png" alt="Lua Logo" width="75">
+        <button id="Redict2">Back to Main</button>
+    </div>
+    <div class="Main">
+        <h1>Luau Tutorials</h1>
+        <h2>Luau functions documentation
+            <a href="https://devforum.roblox.com/t/how-to-use-syntax-in-luau-function-documentation/2223468" target="_blank">here</a>
+        </h2>
+        <h2>Luau in 21 minute
+            <a href="https://www.youtube.com/watch?v=LWL5QUdSQiA" target="_blank">here</a>    
+        </h2>
+        <h2>How make game in Roblox
+            <a href="https://www.youtube.com/watch?v=9MUgLaF22Yo&list=PLQ1Qd31Hmi3W_CGDzYOp7enyHlOuO3MtC" target="_blank">here</a>
+        </h2>
+        <h2>Roblox Developer Hub
+            <a href="https://developer.roblox.com/en-us/learn-roblox/intro-to-scripting" target="_blank">here</a>
+        </h2>
+        <h2>Official Luau webb editor
+            <a href="https://play.luau.org/" target="_blank">here</a><br>
+            <img src="luaueditor.png" alt="Luau Logo" width="700">
+        </h2>
+        <h1>Basic functions</h1>
+        <h2>Console functions (print, warn, error)</h2>
+        <h3>
+            <code>-- 1 line comment<br>
+            --[[ Multi-line comments ]]--
+            </code> - Any comments will start with -- and will be ignored by decompiler<br>
+            <code>print("Hello, world!")</code> - outputs a message to the console.<br>
+            <code>warn("Hello, world!")</code> - outputs a warning message to the console.<br>
+            <code>error("Hello, world!")</code> - raises an error and stops the script execution.<br>
+            You can change "Hello, world!" to any text you want or even numbers, like:<br>
+            <code>print(123)</code>
+        </h3>
+        <h2>Variable declaration (local, global)</h2>
+        <h3>
+            <code>local x = 10</code> - declares a local variable x with the value of 10.<br>
+            <code>y = 20</code> - declares a global variable y with the value of 20.<br>
+            Local variables are only accessible within the block of code they are declared in, while global variables can be accessed from anywhere in the script.<br>
+            Usualy using for print or something like:<br>
+            <code>local name = "Jack"</code><br>
+            <code>print("Hello, " .. name)</code> - outputs "Hello, Jack" to the console.
+        </h3>
+        <h2>Function declaration (function)</h2>
+        <h3>
+            <code>function YourFunctonName(Args)<br>    print(Args)<br>end</code><br>
+            <code>YourFunctonName("Hello, world!")</code> - declares a function named YourFunctionName that takes one argument Args and prints it to the console when called.<br>
+        </h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
